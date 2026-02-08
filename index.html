@@ -11,12 +11,11 @@
         font-family: 'Arial', sans-serif;
         color: #fff;
         min-height: 100%;
-        background: radial-gradient(ellipse at bottom, #0b0c10 0%, #1f2833 100%);
-        overflow-y: auto;
+        background: #0b0c10; /* Uzay rengi */
+        overflow-x: hidden;
         position: relative;
     }
 
-    /* Container */
     .container {
         position: relative;
         z-index: 10;
@@ -35,51 +34,20 @@
         text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
 
-    h2 {
-        margin-top: 30px;
-        color: #ffe;
-    }
-
-    h3 {
-        margin-top: 20px;
-        color: #ffd700;
-    }
-
-    p, li, pre {
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-
+    h2 { margin-top: 30px; color: #ffe; }
+    h3 { margin-top: 20px; color: #ffd700; }
+    p, li, pre { line-height: 1.6; font-size: 1rem; }
     pre {
         background: rgba(255,255,255,0.1);
         padding: 10px;
         border-radius: 10px;
         overflow-x: auto;
     }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    /* Emoji animasyonu */
-    .emoji {
-        position: absolute;
-        font-size: 2.5rem;
-        pointer-events: none;
-        animation: floatEmoji linear infinite;
-        text-shadow: 0 0 10px #fff;
-    }
-
-    @keyframes floatEmoji {
-        0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 1;}
-        100% { transform: translateY(-10vh) translateX(50vw) rotate(360deg); opacity: 0;}
-    }
+    ul { padding-left: 20px; }
 
     /* Yıldızlar */
     .star {
         position: absolute;
-        width: 2px;
-        height: 2px;
         background: white;
         border-radius: 50%;
         opacity: 0.8;
@@ -94,29 +62,7 @@
 </head>
 <body>
 
-<!-- Uçan emojiler -->
-<div class="emoji" style="left:5vw; animation-duration:6s;">✨</div>
-<div class="emoji" style="left:15vw; animation-duration:8s;">🎉</div>
-<div class="emoji" style="left:30vw; animation-duration:7s;">💫</div>
-<div class="emoji" style="left:45vw; animation-duration:9s;">🌟</div>
-<div class="emoji" style="left:60vw; animation-duration:5s;">🌀</div>
-<div class="emoji" style="left:75vw; animation-duration:6s;">🎇</div>
-<div class="emoji" style="left:90vw; animation-duration:10s;">✨</div>
-
-<!-- Yıldızları rastgele oluştur -->
-<script>
-    const starCount = 200; // daha fazla yıldız
-    for(let i=0;i<starCount;i++){
-        let star = document.createElement('div');
-        star.className = 'star';
-        star.style.top = Math.random() * document.body.scrollHeight + 'px';
-        star.style.left = Math.random() * window.innerWidth + 'px';
-        star.style.width = star.style.height = Math.random()*2 + 1 + 'px';
-        star.style.animationDuration = 1 + Math.random()*3 + 's';
-        document.body.appendChild(star);
-    }
-</script>
-
+<!-- Konteyner -->
 <div class="container">
     <h1>ATAGUL IDE - TÜRKÇE proglamla dili</h1>
 
@@ -185,6 +131,23 @@ bitir</pre>
 
     <p>©2026 ATAGUL GAMES</p>
 </div>
+
+<!-- Yıldızları tüm sayfa boyunca oluştur -->
+<script>
+    const starCount = 300;
+    const bodyHeight = document.body.scrollHeight + window.innerHeight;
+    for(let i=0; i<starCount; i++){
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.top = Math.random() * bodyHeight + 'px';
+        star.style.left = Math.random() * window.innerWidth + 'px';
+        const size = Math.random() * 2 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+        star.style.animationDuration = 1 + Math.random()*3 + 's';
+        document.body.appendChild(star);
+    }
+</script>
 
 </body>
 </html>
