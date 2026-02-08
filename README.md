@@ -1,11 +1,11 @@
 # ATAGUL IDE - TÜRKÇE proglamla dili.
-ATAGUL IDE, ATAGUL GAMES tarafından geliştirilen sadece TÜRKÇE komutlar ile çalışan tümleşik geliştirme uygulamasıdır. 
+### ATAGUL IDE, ATAGUL GAMES tarafından geliştirilen sadece TÜRKÇE komutlar ile çalışan tümleşik geliştirme uygulamasıdır. 
 ----------------------------------------------------------------------------------------------------------------------
 # ATAGUL IDE nedir?
-ATAGUL IDE, TÜRKÇE proglamla dili ve Tümleşik geliştirme uygulamasıdır...
+### ATAGUL IDE, TÜRKÇE proglamla dili ve Tümleşik geliştirme uygulamasıdır...
 
 # ATAGUL IDE kim tasarladı?
-ATAGUL IDE, Ahmet Mete Atagül (ATAGUL GAMES'in CEO’su) tarafından tasarlandı ve 2026 yılında ATAGUL GAMES tarafından  yayınlandı.
+### ATAGUL IDE, Ahmet Mete Atagül (ATAGUL GAMES'in CEO’su) tarafından tasarlandı ve 2026 yılında ATAGUL GAMES tarafından  yayınlandı.
 
 # ATAGUL IDE resmî indirme platformları
 ### Microsoft Store:
