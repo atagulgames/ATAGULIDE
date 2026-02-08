@@ -11,7 +11,7 @@
 ### Microsoft Store:
 https://apps.microsoft.com/detail/xp88wwzglkwb0g?hl=tr-TR&gl=TR
 
-### İtc.io:
+### İtch.io:
 https://atagul-games.itch.io/atagulide
 
 ### GameJolt:
